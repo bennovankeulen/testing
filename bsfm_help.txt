@@ -1,0 +1,50 @@
+BSFM help
+=========
+mt         mark target directory
+m1         mark 1 (1-4)
+g1         goto mark 1
+
+c dir      cd into directory and listing (dir can also be an alias to a directory)
+
+o dir      cd into directory and listing
+o file     open file with default application
+cf         cd into front finder window (mac only)
+
+
+fd string  find directory with string and cd into it
+ff string  find file with string in name (from here) 
+
+sf string  search file from here / open choice in mc / max 2 zoektermen
+sff string search file on fileserver / open choice in mc / zoekt niet in prinergy
+fs string  find all files containing string in the text
+
+cpe ext    copy files with extension to targetdir
+mve ext    move files with extension to targetdir
+
+d          safe delete
+trash      put file in folder _trash in same directory
+
+l          listing default (ls -lhp)
+lt         listing by modification time (ls -clthp)
+lf         list files only, in alphabetical order (ls -lh | grep -v ^d)
+lfs        list files only, by size (ls -Slh | grep -v ^d)
+lft        list files only, by modification time (ls -clth | grep -v ^d)
+ll         list last modified file
+ltd        list files and directories modified today
+lh         list hidden files only (find . -maxdepth 1 -type f -name ".*" | more)
+
+h          this help file
+
+
+BASKET (list with files and directories to copy or to move)
+------
+bs         basket - show
+ba file    basket - add
+br rgx     basket - regex: add all files and directories with rgx to basket
+be         basket - empty
+cbt        copy the basket to targetdir
+mbt        move the basket to targetdir
+cbh        copy the basket to here
+mbh        move the basket to here
+bo         open de basket-file in vim
+
